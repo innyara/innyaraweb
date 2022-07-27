@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html> 
+<html lang="en">
+    <head>     
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=1280, initial-scale=1">
+        <title>Holi</title> 
+        <link rel="icon" type="image/x-icon" href="{% static 'img/logo.png' %}">
+        <style>
+            .center-screen {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                text-align: center;
+            }
+
+        </style>
+    </head> 
+    <body style="background-color: black;" >   
+        <script>var siteWidth = 1280;
+            var scale = screen.width /siteWidth;
+            
+            document.querySelector('meta[name="viewport"]').setAttribute('content', 'width='+siteWidth+', initial-scale='+scale+'');</script>
+            <script>console.log("Holi :D");</script>
+        <div class="center-screen"> 
+            <p style="color: white; font-size: 5em;">Próximamente contenido exclusivo para... 
+                <p style="color: white; font-size: 6em;"> ¡ninjas!</p>
+        </div>
+    </body>
+ </html>
